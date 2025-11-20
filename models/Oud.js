@@ -2,12 +2,10 @@ const mongoose = require('mongoose');
 
 const oudSchema = new mongoose.Schema({
   name: String,
-  type: String,
+  origin: String,
   size: String,
-  quantity: Number,
-  purchasePrice: Number,
-  sellingPrice: Number,
-  supplier: String,
+  stock: Number,
+ price: Number,
   dateAdded: { type: Date, default: Date.now }
 });
 

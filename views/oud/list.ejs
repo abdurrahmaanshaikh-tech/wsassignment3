@@ -10,11 +10,11 @@
       <thead class="table-dark">
         <tr>
           <th>Name</th>
-          <th>Type</th>
-          <th>Size</th>
-          <th>Qty</th>
-          <th>Selling Price</th>
+          <th>Origin</th>
+          <th>Stock</th>
+          <th>Price</th>
           <th>Actions</th>
+          
         </tr>
       </thead>
 
@@ -22,14 +22,14 @@
       <% items.forEach(item => { %>
         <tr>
           <td><%= item.name %></td>
-          <td><%= item.type %></td>
-          <td><%= item.size %></td>
-          <td><%= item.quantity %></td>
-          <td>$<%= item.sellingPrice %></td>
+          <td><%= item.origin %></td>
+          <td><%= item.stock %></td>
+          <td><%= item.price%></td>
 
           <td>
             <a class="btn btn-warning btn-sm" href="/oud/edit/<%= item._id %>">Edit</a>
             <a class="btn btn-danger btn-sm" href="/oud/delete/<%= item._id %>">Delete</a>
+            
           </td>
         </tr>
       <% }); %>
