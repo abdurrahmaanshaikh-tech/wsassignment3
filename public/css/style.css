@@ -1,0 +1,147 @@
+body { 
+    background: linear-gradient(135deg, #f9f9f9, #ececec);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+} /*add styles for a good, clean ui*/
+
+/*add transtiosns*/
+* {
+    transition: 0.25s ease;
+}
+
+/*adds clean headings*/
+h1, h2, h3, h4 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/*makes the nav bar look clean*/
+.navbar {
+    background-color: #111 !important;
+    padding: 14px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.navbar-brand i {
+    font-size: 1.2rem;
+    margin-right: 6px;
+    color: #ffd166;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd166 !important;
+}
+
+.card {
+    border-radius: 14px;
+    border: none;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/*makes the table look good*/
+table th {
+    background-color: #111 !important;
+    color: #fff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table td {
+    font-size: 1rem;
+    padding: 14px 12px !important;
+}
+
+/*adds hovr effects*/
+.table-hover tbody tr:hover {
+    background-color: #f0f0f0 !important;
+    transform: scale(1.01);
+}
+
+/*makes the buttons looks good*/
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 8px 14px;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #06c15f, #049b4a);
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,255,150,0.3);
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #049b4a, #03773a);
+    transform: translateY(-2px);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #ffca3a, #e0a800);
+    border: none;
+    color: #111;
+    box-shadow: 0 2px 10px rgba(255,200,0,0.25);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ef476f, #d93763);
+    border: none;
+    box-shadow: 0 2px 10px rgba(255,0,68,0.2);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #d93763, #b72a50);
+    transform: translateY(-2px);
+}
+
+/*Icons inside buttons*/
+.btn i {
+    font-size: 0.95rem;
+}
+
+/*makes the inputs in the form look clean*/
+form input, form select {
+    background: #ffffff;
+    border: 2px solid #e6e6e6;
+    border-radius: 10px;
+    height: 45px;
+    font-size: 1rem;
+    padding-left: 12px;
+}
+
+form input:focus, form select:focus {
+    border-color: #06c15f;
+    box-shadow: 0 0 10px rgba(0,200,100,0.25);
+}
+
+/*makes the footer look clean*/
+footer {
+    background: #111;
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+}
+
+footer i {
+    color: #ffd166;
+}

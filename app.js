@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-// Connect to MongoDB
+//connects to monogdb
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log("Mongo ERROR:", err));
@@ -14,12 +14,12 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
-// Home page
+//the home page
 app.get('/', (req, res) => {
   res.render('index');
 });
 
-// Oud routes
+//oud routes
 const oudRoutes = require('./routes/oud');
 app.use('/oud', oudRoutes);
 

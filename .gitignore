@@ -1,2 +1,5 @@
 .env
 node_modules
+package-lock.json
+
+<-- ignores and hides these files from git -->

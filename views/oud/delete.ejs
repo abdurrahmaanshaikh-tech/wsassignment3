@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Delete Oud</title>
+  <title>Delete Oud</title> <!--the title of the page-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body class="bg-light p-4">
 
-<div class="container">
-  <h1 class="mb-4 text-danger">Delete Oud</h1>
+<div class="container"> <!--the main container-->
+  <h1 class="mb-4 text-danger">Delete Oud</h1> <!--the header of the page-->
 
-  <div class="card p-4 shadow-sm">
+  <div class="card p-4 shadow-sm"> <!--the card container-->
     <h4>Are you sure you want to delete this Oud?</h4>
 
-    <p><strong>Name:</strong> <%= oud.name %></p>
+    <p><strong>Name:</strong> <%= oud.name %></p> <!--the name of the oud-->
     <p><strong>Origin:</strong> <%= oud.origin %></p>
     <p><strong>Price:</strong> $<%= oud.price %></p>
     <p><strong>Stock:</strong> <%= oud.stock %></p>
 
-    <form action="/oud/delete/<%= oud._id %>" method="POST">
+    <form action="/oud/delete/<%= oud._id %>" method="POST"> <!--the form to delete the oud-->
       <button class="btn btn-danger">Yes, Delete</button>
       <a href="/oud" class="btn btn-secondary">Cancel</a>
     </form>
