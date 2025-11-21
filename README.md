@@ -1,5 +1,8 @@
 # wsassignment3
 Oud Inventory Manager
+https://wsassignment3-ujts.onrender.com/
+httpshttps://github.com/abdurrahmaanshaikh-tech/wsassignment3://github.com/abdurrahmaanshaikh-tech/wsassignment3
+
 
 Project Overview
 Oud Inventory Manager is a secure web application for fragrance sellers that allows tracking and managing oud oils, attars, and perfume blends. The system allows users to add new products, view all inventory, update product details, and delete items that are no longer available. This project demonstrates a full CRUD application using NodeJS, ExpressJS, MongoDB/Mongoose, and EJS templating.
