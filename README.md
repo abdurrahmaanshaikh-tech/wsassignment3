@@ -1,7 +1,7 @@
 # wsassignment3
 Oud Inventory Manager
 https://wsassignment3-ujts.onrender.com/
-httpshttps://github.com/abdurrahmaanshaikh-tech/wsassignment3://github.com/abdurrahmaanshaikh-tech/wsassignment3
+https://github.com/abdurrahmaanshaikh-tech/wsassignment3
 
 
 Project Overview
