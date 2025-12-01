@@ -25,3 +25,8 @@ router.get('/delete/:id', isAuthenticated, oudController.showDeletePage);
 router.post('/delete/:id', isAuthenticated, oudController.deleteOud);
 
 module.exports = router;
+
+
+
+
+
