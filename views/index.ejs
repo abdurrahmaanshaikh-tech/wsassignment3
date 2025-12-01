@@ -1,17 +1,30 @@
 <%- include('partials/header') %>
-
 <div class="text-center mt-5">
-    <h1 class="display-4 fw-bold">Oud Inventory Manager</h1>
-    <p class="lead mt-3">
-        A simple and professional way to track, organize, and manage your oud and attar inventory.
-    </p>
 
-    <div class="mt-4">
-        <a href="/oud" class="btn btn-primary btn-lg mx-2">View Inventory</a>
-        <a href="/oud/add" class="btn btn-success btn-lg mx-2">Add New Oud</a>
-    </div>
-
-  
+<h1 class="display-4 fw-bold">Oud Inventory Manager</h1>
+<p class="lead mt-3">
+A simple and professional way to track, organize, and manage your
+oud and attar inventory.
+</p>
+<div class="mt-4">
+<a href="/oud" class="btn btn-primary btn-lg mx-2">View
+Inventory
+</a>
+<% if (user) { %>
+<a href="/oud/add" class="btn btn-success btn-lg mx-2">Add New
+Oud
+</a>
+<% } else { %>
+<p class="mt-4 text-muted">Please login to add or manage inventory</p>
+<div class="mt-3">
+<a href="/auth/github" class="btn btn-dark btn-lg mx-2">
+<i class="fa-brands fa-github"></i> Login with GitHub
+</a>
+<a href="/auth/google" class="btn btn-danger btn-lg mx-2">
+<i class="fa-brands fa-google"></i> Login with Google
+</a>
 </div>
-
+<% } %>
+</div>
+</div>
 <%- include('partials/footer') %>
